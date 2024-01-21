@@ -1,0 +1,2 @@
+pyyaml==6.0.1
+gitignore-parser==0.1.11
