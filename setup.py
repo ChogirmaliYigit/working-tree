@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='working_tree',
-    version='0.0.1b6',
+    version='0.0.2',
     license='MIT',
     author="Jahongir Ibragimov",
     author_email='chogirmali.yigit@gmail.com',
