@@ -1,14 +1,13 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 setup(
-    name='working-tree',
-    version='0.0.1b0',
+    name='working_tree',
+    version='0.0.1b3',
     license='MIT',
     author="Jahongir Ibragimov",
     author_email='chogirmali.yigit@gmail.com',
-    packages=find_packages('working-tree'),
-    package_dir={'': 'working-tree'},
+    packages=['working_tree'],
     url='https://github.com/ChogirmaliYigit/working-tree',
     keywords='working tree',
     install_requires=[

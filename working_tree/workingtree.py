@@ -2,14 +2,11 @@ import os
 import yaml
 from gitignore_parser import parse_gitignore
 
-# Get the directory of the script
-script_directory = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_YAML_FILE = os.path.join(script_directory, 'working_tree.yaml')
 
-TREE_IGNORE = ['.git', os.path.basename(__file__), OUTPUT_YAML_FILE]
+def create_yaml_tree(directory, ignore_list=None, level=0):
+    if ignore_list is None:
+        ignore_list = []
 
-
-def create_yaml_tree(directory, level=0):
     result = {}
 
     # Get the list of items in the directory
@@ -24,12 +21,12 @@ def create_yaml_tree(directory, level=0):
 
     for item in items:
         # Exclude hidden files and directories (starting with dot)
-        if item not in TREE_IGNORE:
+        if item not in ignore_list:
             path = os.path.join(directory, item)
 
             if os.path.isdir(path):
                 # Recursively call for subdirectories
-                result[item] = create_yaml_tree(path, level + 1)
+                result[item] = create_yaml_tree(path, ignore_list, level + 1)
             elif os.path.isfile(path):
                 result[item] = f"{os.path.getsize(path)}B"
             else:
@@ -43,8 +40,17 @@ def save_yaml(work_tree, output_file):
         yaml.dump(work_tree, file, default_flow_style=False)
 
 
-def make_tree(start_directory='.'):
-    # Save the YAML tree to the output file in the script directory
-    save_yaml(create_yaml_tree(start_directory), OUTPUT_YAML_FILE)
+def make_tree(start_directory='.', output_file=None):
+    # Get the directory of the script
+    script_directory = os.path.dirname(os.path.abspath(__file__))
 
-    print(f"Working tree saved to {OUTPUT_YAML_FILE}")
+    # Use the current working directory if start_directory is not provided
+    start_directory = start_directory or os.getcwd()
+
+    if output_file is None:
+        output_file = os.path.join(script_directory, 'working_tree.yaml')
+
+    # Save the YAML tree to the output file in the specified directory
+    save_yaml(create_yaml_tree(start_directory), output_file)
+
+    print(f"Working tree saved to {output_file}")
