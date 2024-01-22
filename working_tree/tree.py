@@ -1,5 +1,6 @@
 import os
 import yaml
+import inspect
 from gitignore_parser import parse_gitignore
 
 
@@ -42,7 +43,8 @@ def save_yaml(work_tree, output_file):
 
 def make_tree(start_directory='.', output_file=None):
     # Get the directory of the script
-    script_directory = os.path.dirname(os.path.abspath(__file__))
+    caller_frame = inspect.currentframe().f_back
+    script_directory = os.path.dirname(caller_frame.f_code.co_filename)
 
     # Use the current working directory if start_directory is not provided
     start_directory = start_directory or os.getcwd()

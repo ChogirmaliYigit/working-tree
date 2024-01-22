@@ -1,10 +1,135 @@
+.git:
+  COMMIT_EDITMSG: 13B
+  HEAD: 21B
+  config: 317B
+  description: 73B
+  hooks:
+    applypatch-msg.sample: 478B
+    commit-msg.sample: 896B
+    fsmonitor-watchman.sample: 4726B
+    post-update.sample: 189B
+    pre-applypatch.sample: 424B
+    pre-commit.sample: 1643B
+    pre-merge-commit.sample: 416B
+    pre-push.sample: 1374B
+    pre-rebase.sample: 4898B
+    pre-receive.sample: 544B
+    prepare-commit-msg.sample: 1492B
+    push-to-checkout.sample: 2783B
+    update.sample: 3650B
+  index: 640B
+  info:
+    exclude: 240B
+  logs:
+    HEAD: 1503B
+    refs:
+      heads:
+        main: 1503B
+      remotes:
+        origin:
+          HEAD: 208B
+          main: 1113B
+  objects:
+    '07':
+      2964c9965c01600f13c28081624768563e7cd1: 89B
+    0a:
+      f881b4ad5da9fe8761ff1db08e57954b9a5d12: 199B
+    0c:
+      08de6b47488773c14f8abdcbcc79c5c18e0c28: 102B
+    0e:
+      6c79c1351fcb1d475c391f44f547129d907921: 55B
+    '19':
+      54834383a34330114c585d85f3425763567f22: 188B
+    1e:
+      ef6f62f98cf2e1ae4799d6882f765dc7761be0: 230B
+    '21':
+      02b32bb86a61ed97c79398d8b72296002f4826: 155B
+    '23':
+      3f6669265809557c99e7fb68deab065d5c5789: 118B
+    '26':
+      d33521af10bcc7fd8cea344038eaaeb78d0ef5: 63B
+    2b:
+      810c565644a52a650e8cb6e4c9600074e4df4a: 751B
+    2d:
+      e7a52999db68eb8bd827e28eb240067febbabf: 198B
+    '31':
+      59791cc85f3c2be4eee5a0311f2587bd747502: 172B
+    '37':
+      fd9819a3c32e15c40e14338256b00063fdc42a: 708B
+    4a:
+      d41cd662a49a4135cc15ef1c3ffb11b74c6eaa: 48B
+    4c:
+      d30a2c06d326789d7e95d6f09a7955fd39e430: 261B
+    '50':
+      d4a42084ae3890cc5113b91b164ca4d97fab1e: 170B
+    '58':
+      bfb29b146560f30c14b5e5b5197260757778e5: 167B
+    5e:
+      69eb37971a2a17bdb221c80b69eff3a3594551: 54B
+      7cb5868c31ad26c92bb6eaa9fa48dd58053b23: 170B
+      e9a36adb9250da0a7a4b7aad9f855ee3671b47: 1553B
+    '88':
+      18be1b6fb3b9fba01b4dc11ca6f8610dc23582: 223B
+      25a3e9740d708b2f12ff258d1a1d84b29112f2: 287B
+    '97':
+      dc9e1ed35043deedb74d153e33e1dac040cbab: 284B
+    9a:
+      27d21295874056ba8752b531866c1f24211a7f: 92B
+    9b:
+      568cd7f01f940e8202e4a4b89b6b5d935d2c3e: 697B
+    9d:
+      6f3eb3c368a196065b6b258a532bcf40a0ebff: 79B
+    a0:
+      92c8ba420f541027c61b4feac78cc0f61d2199: 198B
+    a4:
+      402a2eb84750ebbdd22869f5c97f440a85973a: 260B
+    a9:
+      3df3abce9e808e73cf8efce844d110277b1052: 704B
+    aa:
+      f6e33c40f098227c388d93f63ace9339cb70cd: 199B
+    b1:
+      ba966a30fe0652f717daaf431d43ed3c94eefe: 261B
+    bd:
+      03210ff00d94072054f8475aedc6eb9f83f232: 261B
+    c3:
+      69ef07143882fbc5ccd60e0f83ec9313d63773: 269B
+    cd:
+      806edd63f5a6dc89c042880fab92f5af4645ef: 179B
+    d7:
+      bf30ea83348a9faf20d10ca28e7ffeab84ee63: 162B
+    d9:
+      fc32d026c27bc5e7e322515e220ae3d92984a2: 671B
+    da:
+      8f60c96d7df7ca89cd79bf5ee7d40257531f80: 74B
+    de:
+      54513426e3ec3ce7ad8d2b661a573028cbdccb: 197B
+    e4:
+      55e74b3c4fe4633c55ccf22fd443d22c054c5b: 150B
+    e6:
+      9de29bb2d1d6434b8b29ae775ad8c2e48c5391: 15B
+    ea:
+      1d45cb8180c8aeaa7cdaae25d30bd366abedfd: 124B
+    ee:
+      6322d8119719c1bf5d46d6ec7da9b1cb7209e7: 193B
+    info: {}
+    pack:
+      pack-8aaf3ced6a8190a29d7f0f484be8d80faab20039.idx: 1184B
+      pack-8aaf3ced6a8190a29d7f0f484be8d80faab20039.pack: 2445B
+  packed-refs: 112B
+  refs:
+    heads:
+      main: 41B
+    remotes:
+      origin:
+        HEAD: 30B
+        main: 41B
+    tags: {}
 .gitignore: 3087B
 README.md: 198B
-makefile: 129B
-requirements.txt: 39B
-setup.py: 439B
-test.py: 52B
-tree:
-  __pycache__:
-    workingtree.cpython-311.pyc: 2883B
-  working_tree.yaml: 184B
+requirements.txt: 66B
+setup.py: 397B
+working_tree:
+  __init__.py: 0B
+  __pycache__: {}
+  tree.py: 1994B
+  working_tree.yaml: 185B
