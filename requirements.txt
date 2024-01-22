@@ -1,2 +1,4 @@
 pyyaml==6.0.1
 gitignore-parser==0.1.11
+wheel==0.42.0
+twine==4.0.2
