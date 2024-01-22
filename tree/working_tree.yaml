@@ -1,0 +1,10 @@
+.gitignore: 3087B
+README.md: 198B
+makefile: 129B
+requirements.txt: 39B
+setup.py: 439B
+test.py: 52B
+tree:
+  __pycache__:
+    workingtree.cpython-311.pyc: 2883B
+  working_tree.yaml: 184B
